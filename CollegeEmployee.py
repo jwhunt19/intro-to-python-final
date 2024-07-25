@@ -1,5 +1,6 @@
 from Person import Person
 
+
 class CollegeEmployee(Person):
 
     def __init__(self):
@@ -16,5 +17,4 @@ class CollegeEmployee(Person):
 
     def display_info(self):
         super().display_info()
-        print(f", SSN: {self.ssn}, Salary: {self.salary}, Dept: {self.department}")
-    
+        print(f"SSN: {self.ssn}, Salary: {self.salary}, Dept: {self.department}")

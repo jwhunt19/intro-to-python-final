@@ -15,5 +15,5 @@ class Person:
 
     def display_info(self):
         print(
-            f"{self.first_name} {self.last_name}, {self.address} {self.zipcode}, {self.phone}"
+            f"Name: {self.first_name} {self.last_name} \nAddress: {self.address} {self.zipcode} \nPhone: {self.phone}"
         )
