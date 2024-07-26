@@ -7,9 +7,11 @@ class Person:
         self.phone = ""
 
     def set_info(self):
+        #TODO: Add character limit check for first_name, last_name, address, zipcode, phone
         self.first_name = input("Enter first name: ")
         self.last_name = input("Enter last name: ")
         self.address = input("Enter street address: ")
+        #TODO: Add type validation for zipcode and phone
         self.zipcode = input("Enter zip code: ")
         self.phone = input("Enter phone number: ")
 

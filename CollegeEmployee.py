@@ -11,7 +11,10 @@ class CollegeEmployee(Person):
 
     def set_info(self):
         super().set_info()
+        # TODO: Add character limit and type checking for SSN
         self.ssn = input("Enter Social Security number: ")
+        # TODO: Add type checking for salary
+        # Regular code comment for example 
         self.salary = float(input("Enter annual salary: "))
         self.department = input("Enter department name: ")
 
