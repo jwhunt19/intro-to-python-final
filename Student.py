@@ -19,4 +19,5 @@ class Student(Person):
 
     def display_info(self):
         super().display_info()
-        print(f"Major: {self.major}, GPA: {self.gpa}")
+        print("Major: ", self.major)
+        print("GPA: ", self.gpa)

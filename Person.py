@@ -18,6 +18,6 @@ class Person:
             print("Invalid phone number. Must be 10 digits.")
 
     def display_info(self):
-        print(
-            f"Name: {self.first_name} {self.last_name} \nAddress: {self.address} {self.zipcode} \nPhone: {self.phone}"
-        )
+        print("Name: ", self.first_name, self.last_name)
+        print("Address: ", self.address, self.zipcode)
+        print("Phone: ", self.phone)

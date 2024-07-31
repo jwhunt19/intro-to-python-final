@@ -47,7 +47,7 @@ def main():
     print("\nCollege Employees")
     print("=================")
     if len(college_employees) == 0:
-        print("No college employees entered.")
+        print("No college employees entered.\n")
     else:
         for c in college_employees:
             c.display_info()
@@ -56,7 +56,7 @@ def main():
     print("Faculty")
     print("=================")
     if len(faculty) == 0:
-        print("No faculty entered.")
+        print("No faculty entered.\n")
     else:
         for f in faculty:
             f.display_info()
@@ -65,7 +65,7 @@ def main():
     print("Students")
     print("=================")
     if len(students) == 0:
-        print("No students entered.")
+        print("No students entered.\n")
     else:
         for s in students:
             s.display_info()

@@ -13,10 +13,10 @@ class CollegeEmployee(Person):
         super().set_info()
 
         while True:
-            self.ssn = input("Enter Social Security number (11 digits): ")
-            if len(self.ssn) == 11:
+            self.ssn = input("Enter Social Security number (9 digits): ")
+            if len(self.ssn) == 9 and self.ssn.isdigit():
                 break
-            print("Invalid SSN. Must be 11 characters.")
+            print("Invalid SSN. Must be 9 digits.")
 
         while True:
             try:
@@ -29,4 +29,6 @@ class CollegeEmployee(Person):
 
     def display_info(self):
         super().display_info()
-        print(f"SSN: {self.ssn}, Salary: {self.salary}, Dept: {self.department}")
+        print("SSN:", self.ssn)
+        print("Salary:", self.salary)
+        print("Dept:", self.department)
