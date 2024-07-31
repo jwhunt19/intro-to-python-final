@@ -44,23 +44,32 @@ def main():
                 print("Invalid choice")
                 continue
 
-    print("College Employees")
+    print("\nCollege Employees")
     print("=================")
-    for c in college_employees:
-        c.display_info()
-        print("")
+    if len(college_employees) == 0:
+        print("No college employees entered.")
+    else:
+        for c in college_employees:
+            c.display_info()
+            print("")
 
     print("Faculty")
     print("=================")
-    for f in faculty:
-        f.display_info()
-        print("")
+    if len(faculty) == 0:
+        print("No faculty entered.")
+    else:
+        for f in faculty:
+            f.display_info()
+            print("")
 
     print("Students")
     print("=================")
-    for s in students:
-        s.display_info()
-        print("")
+    if len(students) == 0:
+        print("No students entered.")
+    else:
+        for s in students:
+            s.display_info()
+            print("")
 
 
 main()

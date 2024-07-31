@@ -11,11 +11,20 @@ class CollegeEmployee(Person):
 
     def set_info(self):
         super().set_info()
-        # TODO: Add character limit and type checking for SSN
-        self.ssn = input("Enter Social Security number: ")
-        # TODO: Add type checking for salary
-        # Regular code comment for example 
-        self.salary = float(input("Enter annual salary: "))
+
+        while True:
+            self.ssn = input("Enter Social Security number (11 digits): ")
+            if len(self.ssn) == 11:
+                break
+            print("Invalid SSN. Must be 11 characters.")
+
+        while True:
+            try:
+                self.salary = float(input("Enter annual salary: "))
+                break
+            except ValueError:
+                print("Invalid salary. Must be a number.")
+
         self.department = input("Enter department name: ")
 
     def display_info(self):

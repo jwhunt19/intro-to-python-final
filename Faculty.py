@@ -8,8 +8,17 @@ class Faculty(CollegeEmployee):
 
     def set_info(self):
         super().set_info()
-        # TODO: Add type checking for tenured
-        self.tenured = input("Tenured (y/n)? ").lower() == "y"
+
+        while True:
+            tenured_input = input("Tenured? (y/n): ").lower()
+            if tenured_input == "y":
+                self.tenured = True
+                break
+            elif tenured_input == "n":
+                self.tenured = False
+                break
+            else:
+                print("Invalid input. Enter y or n.")
 
     def display_info(self):
         super().display_info()

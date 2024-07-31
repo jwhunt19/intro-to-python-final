@@ -10,8 +10,12 @@ class Student(Person):
     def set_info(self):
         super().set_info()
         self.major = input("Enter major: ")
-        # TODO: Add type checking for GPA
-        self.gpa = float(input("Enter GPA: "))
+        while True:
+            try:
+                self.gpa = float(input("Enter GPA: "))
+                break
+            except ValueError:
+                print("Invalid GPA. Must be a number.")
 
     def display_info(self):
         super().display_info()
