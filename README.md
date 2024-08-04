@@ -1,7 +1,14 @@
 # intro-to-python-final
 Final Project for _Intro. to Programming Python_ at Front Range Community College
 
-## Instructions
+For this project, I was tasked with creating a data entry application for a hypothetical college which allowed input of students, faculty, and employees. 
+
+Various inputs were needed with some overlap between them, for this we were tasked with creating a base or parent `Person` class which all other classes in this program inherit from.
+
+I used looping inputs to validate the data type and length, ensuring the user inputs the expected values to avoid error.
+
+
+## Provided Instructions:
 Develop a set of classes for a college to use in various student service and personnel applications. 
 
 ### Classes you need to design include the following:
